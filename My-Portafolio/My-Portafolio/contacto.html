@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Portafolio</title>
+
+
+    <!--ENLACES-->
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="JS/index.js" defer></script>
+
+</head>
+
+<body>
+
+    <!--CONTENEDOR PRINCIPAL-->
+
+    <nav class="navegador1">
+        <a class="logo" href="#"> <input type="radio"> Disponible</a>
+
+        <button id="menubtn">
+            <img src="IMAGES/menu.svg" alt="">
+        </button>
+    </nav>
+
+    <!--CONTENEDOR PRINCIPAL-->
+
+    <main id="container">
+
+
+       
+        <header class="header3">
+            <h1>Contacto</h1>
+            <p>Let’s collaborate on a new project!</p>
+        </header>
+
+ 
+        <section class="iconos">
+            <button><a href="#"><img src="IMAGES/instagram.svg" alt="">instagram</a></button>
+            <button><a href="#"><img src="IMAGES/facebook.svg" alt="">facebook</a></button>
+
+            <button><a href="#"><img src="IMAGES/send.svg" alt="">email</a>
+            </button>
+        </section>
+
+        
+        <section class="formulario">
+            <p>enviame un mensaje</p>  
+            <form id="form" action="#">
+               <input type="text" placeholder="Nombre">  
+               <input id="correo" type="email" placeholder="Email">
+               <p id="error">ingrese un correo valido de nuevo</p>  
+               <textarea name="" id="textarea" cols="30" rows="10" placeholder="mensaje"></textarea>
+               <input id="boton_error" type="submit" value="Enviar">
+            </form>
+        </section>       
+
+       
+
+        
+        <dialog id="modal">
+            <ul>
+                <li><a href="index.HTML"><img src="IMAGES/gift.svg" alt=""></a></li>
+                <li><a href="second.HTML"><img src="IMAGES/briefcase.svg" alt=""></a></li>
+                <li><a href=""><img src="IMAGES/send.svg" alt=""></a></li>
+                <li id="white_mode"><a href="#"><img src="IMAGES/sun.svg" alt=""></a></li>
+                <li id="close_modal"><a href="#"><img src="IMAGES/x.svg" alt=""></a></li>
+            </ul>
+        </dialog>
+    </main>
+
+
+
+
+
+
+  
+
+
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script> AOS.init();</script>
+</body>
+
+</html>
+
+
