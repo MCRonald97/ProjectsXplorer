@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge | Interactive rating component</title>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+    <section class="firstcontainer">
+
+        <header class="headerbotones">
+            <button class="headerbotones__boton uno">1</button>
+            <button class="headerbotones__boton">2</button>
+            <button class="headerbotones__boton">3</button>
+        </header>
+
+        <h2 class="firstcontainer__pregunta">Seleccione ¿cuál es el carro más veloz del mundo?</h2>
+
+        <article class="carbuttons">
+            <button class="carbuttons__boton uno">Ferrari</button>
+            <button class="carbuttons__boton">Lamborghini</button>
+            <button class="carbuttons__boton">Porsche</button>
+        </article>
+        <footer class="footer">
+            <button class="footer_button buttonone">COMPROBAR</button>
+        </footer>
+
+    </section>
+
+   
+
+    <section class="firstcontainer secondcontainer">
+
+        <header class="headerbotones">
+            <button class="headerbotones__boton">1</button>
+            <button class="headerbotones__boton dos">2</button>
+            <button class="headerbotones__boton">3</button>
+        </header>
+
+        <h2 class="firstcontainer__pregunta">Seleccione ¿cuál es el carro más prestigioso del mundo?</h2>
+
+        <article class="carbuttons">
+            <button class="carbuttons__boton carbuttons__boton2  uno">Mercedes-benz</button>
+            <button class="carbuttons__boton carbuttons__boton2 dos">BMW</button>
+            <button class="carbuttons__boton carbuttons__boton2 tres">Rolls Royce</button>
+        </article>
+        <footer class="footer">
+            <button class="footer_button buttontwo">COMPROBAR</button>
+        </footer>
+
+    </section>
+
+
+
+    <section class="firstcontainer thirdcontainer">
+
+        <header class="headerbotones">
+            <button class="headerbotones__boton">1</button>
+            <button class="headerbotones__boton">2</button>
+            <button class="headerbotones__boton tres">3</button>
+        </header>
+
+        <h2 class="firstcontainer__pregunta">Seleccione ¿cuál es el carro más Tecnologico del mundo?
+        </h2>
+
+        <article class="carbuttons">
+            <button class="carbuttons__boton carbuttons__boton3">Land Rover</button>
+            <button class="carbuttons__boton carbuttons__boton3 ">Cadillac</button>
+            <button class="carbuttons__boton carbuttons__boton3 tres">Tesla</button>
+        </article>
+        <footer class="footer">
+            <button class="footer_button buttonthree">COMPROBAR</button>
+        </footer>
+
+    </section>
+
+
+  <!--RESULTADOS DE PRIMER CONTENEDOR-->
+
+    <section class="resultadopositivo resultadopositivo1">
+        <img class="resultado__img" src="img/comprobado.png" alt="">
+        <p class="resultado__texto">¡Felicidades elegiste la respuesta correcta!</p>
+
+        <button class="resultado__boton btnpositivosiguiente1 ">SIGUIENTE</button>
+
+    </section>
+
+    <section class="resultadopositivo resultadonegativo1">
+        <img class="resultado__img" src="img/advertencia.png" alt="">
+        <p class="resultado__texto">¡Ups! elegiste la respuesta incorrecta!</p>
+
+        <button class="resultado__boton btnnegativosiguiente1  ">SIGUIENTE</button>
+
+    </section>
+
+
+
+<!--RESULTADOS DE SEGUNDO CONTENEDOR-->
+    <section class="resultadopositivo resultadopositivo2">
+        <img class="resultado__img" src="img/comprobado.png" alt="">
+        <p class="resultado__texto">¡Felicidades elegiste la respuesta correcta!</p>
+
+        <button class="resultado__boton btnpositivosiguiente2 ">SIGUIENTE</button>
+
+    </section>
+
+    <section class="resultadopositivo resultadonegativo2">
+        <img class="resultado__img" src="img/advertencia.png" alt="">
+        <p class="resultado__texto">¡Ups! elegiste la respuesta incorrecta!</p>
+
+        <button class="resultado__boton btnnegativosiguiente2  ">SIGUIENTE</button>
+
+    </section>
+
+
+<!--RESULTADOS DE TERCER CONTENEDOR-->
+    <section class="resultadopositivo resultadopositivo3">
+        <img class="resultado__img" src="img/comprobado.png" alt="">
+        <p class="resultado__texto">¡Felicidades elegiste la respuesta correcta!</p>
+
+        <button class="resultado__boton btnpositivosiguiente3 ">SIGUIENTE</button>
+
+    </section>
+
+    <section class="resultadopositivo resultadonegativo3">
+        <img class="resultado__img" src="img/advertencia.png" alt="">
+        <p class="resultado__texto">¡Ups! elegiste la respuesta incorrecta!</p>
+
+        <button class="resultado__boton btnnegativosiguiente3  ">SIGUIENTE</button>
+
+    </section>
+
+
+
+    <!--RESULTADO FINAL RESUMEN-->
+
+    <section class="resultadopositivo resultadofinal">
+        <img class="resultado__img" src="img/happycat.gif" alt="">
+        <p class="resultado__texto">¡Gracias!</p>
+
+        <p class="resultado__texto">Tu resultado final es <span class="calculo"></span>/3</p>
+
+        <button class="resultado__boton resultadofinalbtn ">Finalizar</button>
+
+    </section>
+
+
+        
+</body>
+
+</html>

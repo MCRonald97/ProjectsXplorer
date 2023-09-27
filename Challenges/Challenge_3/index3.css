@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+
+    --White: #ffffffe9;
+    --Light-Grey: #959eac;
+    --MediumGrey: #454b54;
+    --DarkBlue: #252d37;
+    --VeryDarkBlue: #121417;
+    --verde: #0AE98A;
+    --Orange: #fb7413;
+    /*400 regular 600semibold*/
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    background-color: var(--VeryDarkBlue);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.container__pregunta {
+    color: var(--White);
+    text-align: center;
+    font-weight: 400;
+    margin-top: 1.5rem;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-top: 1.5rem;
+}
+
+.nav__opciones {
+    padding: 0.5rem 4rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+
+}
+
+.nav__opciones__tx {
+    color: var(--Light-Grey);
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav::-webkit-scrollbar {
+    height: 20px;
+    /* Ancho del scrollbar */
+}
+
+.nav::-webkit-scrollbar-thumb {
+    background-color: var(--VeryDarkBlue);
+    border-top: 2px solid var(--White);
+}
+
+
+
+/*CONTENEDOR DE LUGARES A ESCOGER*/
+
+.ctr-place {
+    margin: 10px auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ctr-place__selecciones {
+    margin-bottom:1.5rem;
+}
+
+.ctr-lugares__selecciones__img {
+    width: 100%;
+    border-radius: 1.5rem;
+}
+
+.ctr-lugares__selecciones__hijo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.ctr-lugares__selecciones__hijo__txt {
+    color: var(--White);
+    display: flex;
+    flex-direction: column;
+}
+
+.ctr-lugares__selecciones__hijo__txt span {
+    color: var(--Light-Grey);
+
+}
+
+.ctr-lugares__selecciones__hijo__button {
+    background: none;
+    border: none;
+    cursor: pointer;
+
+}
+
+/*CONTENEDOR DE FOOTER*/
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid var(--White);
+
+}
+
+.footer__btn {
+    padding: 0.5rem 4rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+
+/*AGREGANDO DISPLAYS NONE A ELEMENTOS*/
+.ctr-place--Peten {
+    display: none;
+}
+
+.ctr-place--puertobarrios {
+    display: none;
+}
+
+.ctr-place--cayala {
+    display: none;
+}
+
+/*DESCRIPCION DE LUGAR SELECCIONADO CONTENEDORES*/
+.ctr-place--description{
+    display:none;
+    
+}
+.ctr-place--description__img{
+  width:100%;
+}
+.ctr-place__description__title{
+    color:var(--White);
+    text-align: center;
+}
+.ctr-place--description__iconctr{
+    display: flex;
+    flex-direction: column;
+    width:90%;
+    margin:1rem auto;
+
+}
+.ctr-place--description__iconctr p{
+   color:var(--Light-Grey);
+   display: flex;
+   justify-content:left;
+   align-items:center;
+   margin:0.5rem;
+}
+
+.ctr-place--description__iconctr img{
+    margin-right:1rem;
+}
+
+.ctr-place--description h3{
+    color:var(--White);
+    text-align: center;
+    margin-top:1.5rem;
+    margin-bottom:1.5rem;
+}
+.ctr-place--description__p{
+   color:var(--Light-Grey);
+   width:90%;
+   margin:0 auto;
+}
+.ctr-place--description__button{
+    background-color:var(--Orange);
+    padding:0.6rem 4rem;
+    border-radius:1.5rem;
+    border:none;
+    color:var(--White);
+    font-family: 'Poppins', sans-serif;
+    font-size:1rem;
+    margin:1rem auto;
+    display: block;
+    cursor: pointer;
+   
+}
+
+
+
+                /*TAMANO DE PANTALLA PEQUENO*/
+
+@media screen and (min-width:200px) and (max-width:750px) {
+    .container {
+        width: 100%;
+        height: 100vh;
+
+    }
+
+    .container__pregunta {
+        color: var(--White);
+        text-align: center;
+        font-weight: 400;
+        margin-top: 1.5rem;
+    }
+
+    .nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        margin-top: 1.5rem;
+    }
+
+    .nav__opciones {
+        padding: 0.5rem 4rem;
+        cursor: pointer;
+        background: none;
+        border: none;
+    }
+
+    .nav__opciones:first-child {
+        background-color: var(--DarkBlue);
+    }
+
+    .nav__opciones__tx {
+        color: var(--Light-Grey);
+        font-weight: 400;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .nav::-webkit-scrollbar {
+        height: 20px;
+        /* Ancho del scrollbar */
+    }
+
+    .nav::-webkit-scrollbar-thumb {
+        background-color: var(--VeryDarkBlue);
+        border-top: 2px solid var(--White);
+    }
+
+
+
+    /*CONTENEDOR DE LUGARES A ESCOGER*/
+
+    .ctr-place {
+        margin: 10px auto;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .ctr-place__selecciones {
+        margin-bottom:1.5rem;
+        cursor: pointer;
+    }
+    
+
+    .ctr-lugares__selecciones__img {
+        width: 100%;
+        border-radius: 1.5rem;
+    }
+
+    .ctr-lugares__selecciones__hijo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .ctr-lugares__selecciones__hijo__txt {
+        color: var(--White);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ctr-lugares__selecciones__hijo__txt span {
+        color: var(--Light-Grey);
+
+    }
+
+    .ctr-lugares__selecciones__hijo__button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .corazon{
+        background-color:rgba(255, 0, 0, 0.627);
+        border-radius:50%;
+        width:30px;
+        height:30px;
+    }
+
+
+    /*CONTENEDOR DE FOOTER*/
+
+    .footer {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        border-top: 1px solid var(--MediumGrey);
+
+    }
+
+    .footer__btn {
+        padding: 0.5rem 4rem;
+        cursor: pointer;
+        background: none;
+        border: none;
+    }
+    .ctr-favoritos{
+        background-color:var(--VeryDarkBlue);
+        width:90%;
+        margin:0 auto;
+        display: none;
+        flex-direction: column;
+        height:100vh;
+        overflow: auto;
+    }
+
+
+
+    /*AGREGANDO DISPLAYS NONE A ELEMENTOS*/
+    .ctr-place--Peten {
+        display: none;
+    }
+
+    .ctr-place--puerto {
+        display: none;
+    }
+
+    .ctr-place--cayala {
+        display: none;
+    }
+}

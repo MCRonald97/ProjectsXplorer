@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+/*COLORES DE LA APLICACION */
+:root {
+    --main_background: #131316;
+    --second_b: #1c1c21;
+    --borde: #2f3037;
+    --borde2: #4b4c52;
+    --blanco: #f2f2f2;
+    --verde: #0AE98A;
+
+    /TIPOGRAFIAS
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.urbino{
+    width:20%;
+    
+}
+body {
+    background-color: var(--main_background);
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    Font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+}
+
+.formulario {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.formulario p:first-child {
+    color: var(--blanco);
+    margin-left: 0.5rem;
+    text-align: center;
+}
+
+.formulario #form {
+    display: flex;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#form input {
+    margin: 0.5rem;
+}
+
+#form input[type="text"],
+input[type="email"] {
+    background-color: var(--second_b);
+    border: none;
+    width: 46%;
+    height: 50px;
+    border-radius: 0.5rem;
+    color: var(--blanco);
+    text-align: center;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+#error {
+    color: red;
+    text-align: center;
+    margin-left: 0.5rem;
+    display: none;
+}
+
+#form input:focus {
+    outline: none;
+    border: none;
+}
+
+#form input::placeholder {
+    color: var(--blanco);
+}
+
+#form #textarea {
+    max-width: 98%;
+    min-width: 98%;
+    min-height: 100px;
+    margin: 0.5rem auto;
+    background-color: var(--second_b);
+    border: none;
+    border-radius: 0.5rem;
+    text-align: center;
+    color: var(--blanco);
+    font-weight: normal;
+    font-size: 16px;
+}
+
+#form #textarea:focus {
+    outline: none;
+    border: none;
+}
+
+#form input[type="submit"] {
+    background-color: var(--verde);
+    width: 98%;
+    height: 50px;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    color: var(--blanco);
+    font-weight: 900;
+    margin: 0.5rem auto;
+}
+
+@media screen and (min-width:200px) and (max-width:750px) {
+    #form input[type="text"],
+    input[type="email"] {
+        background-color: var(--second_b);
+        border: none;
+        width: 100%;
+        height: 50px;
+        border-radius: 0.5rem;
+        color: var(--blanco);
+        text-align: center;
+        font-weight: 100;
+        font-size: 16px;
+    }
+
+}
