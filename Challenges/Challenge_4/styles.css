@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/*COLORES PARA LA APP*/
+:root {
+    --DarkBlue: hsl(249, 10%, 26%);
+    --GrayishBlue: #b9b6d3;
+    --Green: #38cc8c;
+    --Blue: hsl(248, 32%, 49%);
+    --white: #ffffff;
+    --red: #ff1f1f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-color: var(--Red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("images/fondo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*PRIMERA PANTALLA CONTENDEDOR DEL INPUT NAME*/
+.firstcontainer h1 {
+    color: var(--GrayishBlue);
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.firstcontainer__boton {
+    background-color: var(--Green);
+    padding: 1rem 5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    color: var(--DarkBlue);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 2rem auto;
+    display: block;
+
+}
+
+/*SEGUNDA PANTALLA CONTENDEDOR DEL FORMULARIO*/
+.container {
+    width: 20%;
+    height: 50vh;
+    padding: 20px;
+    border: 1px solid #ffffff77;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    display: none;
+}
+
+.container__h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--white);
+    text-align: center;
+}
+
+.container__p {
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+    color: var(--GrayishBlue);
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.695);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    color: var(--DarkBlue);
+    font-weight: 500;
+}
+
+input[type="password"]::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+
+}
+
+input[type="email"]::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+
+}
+
+input[type="text"]::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: #0443b8;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+
+}
+
+#alert_name {
+    display: none;
+}
+
+
+
+
+
+
+/*TERCER PARTE DEL PROGRAMA MODAL*/
+#modal {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    width: 30%;
+    border-radius: 1rem;
+    color: var(--DarkBlue);
+    border: none;
+
+}
+
+#modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.644);
+}
+
+#modal img {
+    width: 20%;
+    margin: 2rem auto;
+    display: block;
+
+}
+
+/*AREA PARA MEDIA QUERIES*/
+
+@media screen and (min-width:180px) and (max-width:750px) {
+
+    body .container {
+        width: 90%;
+        height: 70vh;
+        padding: 20px;
+        border: 1px solid #ffffff77;
+        border-radius: 8px;
+        backdrop-filter: blur(10px);
+        display: none;
+    }
+
+    /*PRIMERA PANTALLA CONTENDEDOR DEL INPUT NAME*/
+
+    .firstcontainer{
+        width:85%;
+    }
+    .firstcontainer h1 {
+        color: var(--GrayishBlue);
+        font-size: 1.9rem;
+        font-weight: 600;
+        text-align: center;
+        
+    }
+
+    .firstcontainer__boton {
+        background-color: var(--Green);
+        padding: 1rem 5rem;
+        border: none;
+        cursor: pointer;
+        border-radius: 0.5rem;
+        color: var(--DarkBlue);
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        margin:1rem auto;
+        display: block;
+        width:90%;
+    }
+
+    #modal {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem;
+        width: 85%;
+        border-radius: 1rem;
+        color: var(--DarkBlue);
+        border: none;
+
+    }
+
+    .modal_h3 {
+        text-align: center;
+        font-size: 1.4rem;
+    }
+
+    .modal_boton {
+        background-color: var(--Green);
+        padding: 1rem 3rem;
+        border: none;
+        border-radius: 0.5rem;
+        display: block;
+        margin: 0 auto;
+        color: var(--white);
+        font-size: 1rem;
+        cursor: pointer;
+        width: 90%;
+    }
+
+    #modal::backdrop {
+        background-color: rgba(0, 0, 0, 0.644);
+    }
+
+    #modal img {
+        width: 30%;
+        margin: 2rem auto;
+        display: block;
+
+    }
+}

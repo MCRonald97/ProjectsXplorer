@@ -1,79 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="index.css">
-  <script defer src="index.js"></script>
-
-  <title>Challenge | Intro component with sign up form</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulario de Registro</title>
 </head>
 
 <body>
-  <main class="main">
-    <!--PRIMERA SECCION-->
-    <section class="main__section1">
-      <h1 class="main__section1__h1">
-        Learn to code by watching others
-      </h1>
 
-      <p class="main__section1__p">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, libero? Voluptatum vitae alias delectus, doloremque, ipsa sunt obcaecati magni maxime natus veniam blanditiis id corrupti sit quidem ad molestiae mollitia.
-      </p>
-
-    </section>
-    <!--FIN PRIMERA SECCION-->
+   <section class="firstcontainer">
+    <h1>Hola como te llamas?</h1>
+    <input id="input_name" type="text">
+    <button class="firstcontainer__boton" id="submit_name">SUBMIT</button>
+   </section>
 
 
-    <!--SEGUNDA SECCION-->
-    <section class="main__section2">
-       <!--SEGUNDA SECCION BOTON-->
-      <button class="main__section2__offer">
-        <span class="main__section2__offer--span1">Try it free 7 days</span>
-        <span class="main__section2__offer--span2">then $20/mo. thereafter</span>
-      </button>
-      
-       <!--SEGUNDA SECCION FORMULARIO-->
-      
-      <div class="formulario">
-      <form class="form" action="#">
-        <!--FORMULARIO NAME-->
-        <input class="form__input" type="text" id="first_name" placeholder=" First Name">
-        <p class="alert_name">First name can not be empty <img src="images/icon-error.svg" alt=""></p>
 
-        <!--FORMULARIO LAST NAME-->
-        <input class="form__input" type="text" id="last_name" placeholder=" Last Name">
-        <p class="alert_lastname">Last name can not be empty <img src="images/icon-error.svg" alt=""></p>
-  
-        <!--FORMULARIO EMAIL-->
-        <input class="form__input" type="email" id="email" placeholder="Email Address">
-        <p class="alert_email">looks like this is not an email  <img src="images/icon-error.svg" alt=""></p>
+    <main class="container">
+        <h1 class="container__h1">Hola!</h1>
+        <p class="container__p">We are happy to see you again!</p>
 
-        <!--FORMULARIO PASSWORD-->
-        <input class="form__input" type="password" id="password" placeholder="password">
-        <p class="alert_password">
-          Al menos una letra mayúscula. <br>
-          Al menos una letra minúscula. <br>
-          Al menos un número. <br>
-          Al menos un carácter especial entre @, $, !, %, *, ?, o &. <br>
-          La longitud de la contraseña debe ser de al menos 8 caracteres. <img src="images/icon-error.svg" alt=""></p>
-        
-        <!--FORMULARIO BOTON-->
-        <input id="claim" type="button" value="CLAIM YOUR FREE TRIAL">
+        <!--FORMULARIO INICIO-->
+        <form id="registro-form">
 
-        <h3 class="form__terms">By clicking the button, you are agreeing to our <span>Terms and Services</span></h3>
-      </form>
-      </div>
+          
+          <div class="form-group">
+            <input type="text" id="text" name="text" placeholder="Nombre">
+          </div>
+          
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Correo Electronico">
+            </div>
+
+            <div class="form-group">
+                <input type="password" id="password" name="password" placeholder="Contrasena" >
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit-btn">Enviar</button>
+            </div>
+
+            
+
+        </form>
+        <!--FORMULARIO FIN-->
+
+    </main>
+    
+    <dialog id="modal">
+        <h3 class="modal_h3">¡Felicitaciones! Has registrado la cuenta!</h3>
+        <img src="images/green.png" alt="">
+        <button class="modal_boton">ok</button>
+    </dialog>  
 
 
-    </section>
-    <!--FIN SEGUNDA SECCION-->
-  </main>
+    <script src="index.js"></script>
 </body>
-
 </html>
